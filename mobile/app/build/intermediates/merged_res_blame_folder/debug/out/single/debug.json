@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_register.xml.flat",
+        "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_home.xml.flat",
+        "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_login.xml"
+    }
+]
