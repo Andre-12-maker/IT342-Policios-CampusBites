@@ -2871,6 +2871,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable category_chip
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3130,6 +3131,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id exploreSection
 id fade
 id fill
 id fill_horizontal
@@ -3159,6 +3161,7 @@ id hide_ime_id
 id hideable
 id home
 id homeAsUp
+id homeScrollView
 id honorRequest
 id icon
 id icon_group
@@ -3421,6 +3424,7 @@ id unlabeled
 id up
 id useLogo
 id userInfoText
+id viewMenuButton
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner

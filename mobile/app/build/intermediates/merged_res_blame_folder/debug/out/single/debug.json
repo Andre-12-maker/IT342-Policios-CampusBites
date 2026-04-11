@@ -1,14 +1,22 @@
 [
     {
-        "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_register.xml.flat",
-        "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_register.xml"
-    },
-    {
         "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_home.xml.flat",
         "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_home.xml"
     },
     {
-        "merged": "com.cit.policios.campusbites.app-merged_res-31:/layout_activity_login.xml.flat",
-        "source": "com.cit.policios.campusbites.app-main-33:/layout/activity_login.xml"
+        "merged": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-merged_res-31:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-main-33:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-merged_res-31:\\drawable_category_chip.xml.flat",
+        "source": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-main-33:\\drawable\\category_chip.xml"
+    },
+    {
+        "merged": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-merged_res-31:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-main-33:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-merged_res-31:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\L13Y09W11\\.gradle\\daemon\\8.2\\com.cit.policios.campusbites.app-main-33:\\layout\\activity_home.xml"
     }
 ]

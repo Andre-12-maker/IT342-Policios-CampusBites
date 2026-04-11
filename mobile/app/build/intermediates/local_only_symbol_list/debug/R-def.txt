@@ -11,8 +11,11 @@ color secondary
 color secondaryVariant
 color surface
 color surfaceVariant
+drawable category_chip
 id emailInput
+id exploreSection
 id firstNameInput
+id homeScrollView
 id lastNameInput
 id loginButton
 id loginLink
@@ -25,6 +28,7 @@ id registerLink
 id registerPasswordInput
 id registerTitle
 id userInfoText
+id viewMenuButton
 id welcomeText
 layout activity_home
 layout activity_login

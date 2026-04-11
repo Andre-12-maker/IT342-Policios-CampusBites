@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\L13Y09W11\.gradle\caches\transforms-3\e759430223e92b2b915cbfe6c01868cf\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\L13Y09W11\.gradle\caches\transforms-3\c9eb7add5574d9e1897061b1b5eaa3f8\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\L13Y09W11\.gradle\caches\transforms-3\264df06c2dea958afc8a02f9ea9f8a3c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
@@ -59,8 +59,8 @@ ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\
 	android:name
 		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:7:5-25:19
-INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:7:5-25:19
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:7:5-26:19
+INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:7:5-26:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\L13Y09W11\.gradle\caches\transforms-3\e759430223e92b2b915cbfe6c01868cf\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\L13Y09W11\.gradle\caches\transforms-3\e759430223e92b2b915cbfe6c01868cf\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\L13Y09W11\.gradle\caches\transforms-3\264df06c2dea958afc8a02f9ea9f8a3c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -93,30 +93,32 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\L13Y09W11\.gradle\
 		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:13:9-40
+	android:usesCleartextTraffic
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:14:9-44
 activity#com.cit.policios.campusbites.HomeActivity
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:15:9-78
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:16:9-78
 	android:name
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:15:19-75
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:16:19-75
 activity#com.cit.policios.campusbites.RegisterActivity
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:16:9-82
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:17:9-82
 	android:name
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:16:19-79
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:17:19-79
 activity#com.cit.policios.campusbites.LoginActivity
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:17:9-24:20
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:18:9-25:20
 	android:exported
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:19:13-36
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:18:13-70
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:19:13-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:20:13-23:29
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml:23:27-74
 uses-sdk
 INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\src\main\AndroidManifest.xml

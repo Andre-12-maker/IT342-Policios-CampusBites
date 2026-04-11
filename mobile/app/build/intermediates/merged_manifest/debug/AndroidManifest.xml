@@ -26,7 +26,8 @@
         android:roundIcon="@android:drawable/ic_dialog_info"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.cit.policios.campusbites.HomeActivity" />
         <activity android:name="com.cit.policios.campusbites.RegisterActivity" />
         <activity

@@ -14,13 +14,12 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable()) // Disable CSRF for testing APIs
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/**").permitAll() // Allow everyone to register/login
+                .requestMatchers("/auth/**", "/api/**").permitAll() // Allow everyone to access auth and api endpoints
                 .anyRequest().authenticated()
             );
         return http.build();
     }
 
-    // Inside your SecurityConfig class
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
