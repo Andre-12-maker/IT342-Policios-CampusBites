@@ -1,7 +1,4 @@
-package edu.cit.policios.campusbites.service;
-
-import edu.cit.policios.campusbites.entity.User;
-import edu.cit.policios.campusbites.repository.UserRepository;
+package edu.cit.policios.campusbites.features.auth;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

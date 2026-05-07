@@ -1,6 +1,5 @@
-package edu.cit.policios.campusbites.repository;
+package edu.cit.policios.campusbites.features.order;
 
-import edu.cit.policios.campusbites.entity.Order;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

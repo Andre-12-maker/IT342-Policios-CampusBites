@@ -1,6 +1,5 @@
-package edu.cit.policios.campusbites.repository;
+package edu.cit.policios.campusbites.features.auth;
 
-import edu.cit.policios.campusbites.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository; // Import this!
 import java.util.Optional;

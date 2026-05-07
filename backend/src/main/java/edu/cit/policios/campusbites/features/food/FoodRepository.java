@@ -1,6 +1,5 @@
-package edu.cit.policios.campusbites.repository;
+package edu.cit.policios.campusbites.features.food;
 
-import edu.cit.policios.campusbites.entity.Food;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;

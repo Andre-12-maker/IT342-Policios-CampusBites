@@ -1,13 +1,11 @@
-package edu.cit.policios.campusbites.controller;
+package edu.cit.policios.campusbites.features.food;
 
-import edu.cit.policios.campusbites.entity.Food;
-import edu.cit.policios.campusbites.service.FoodService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/food")
-@CrossOrigin(origins = "http://localhost:5173") // Allow frontend
+@CrossOrigin(origins = "*")
 public class FoodController {
     private final FoodService foodService;
 

@@ -1,4 +1,4 @@
-package edu.cit.policios.campusbites.entity;
+package edu.cit.policios.campusbites.features.order;
 
 public class OrderItem {
     private String foodId;

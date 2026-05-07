@@ -1,12 +1,11 @@
-package edu.cit.policios.campusbites.service;
+package edu.cit.policios.campusbites.features.order;
 
-import edu.cit.policios.campusbites.entity.Order;
-import edu.cit.policios.campusbites.repository.OrderRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class OrderService {
+
     private final OrderRepository orderRepository;
 
     public OrderService(OrderRepository orderRepository) {
@@ -14,6 +13,8 @@ public class OrderService {
     }
 
     public Order createOrder(Order order) {
+        if (order.getStatus() == null) order.setStatus("pending");
+        if (order.getOrderDate() == null) order.setOrderDate(new java.util.Date());
         return orderRepository.save(order);
     }
 
@@ -23,5 +24,14 @@ public class OrderService {
 
     public Order getOrderById(String id) {
         return orderRepository.findById(id).orElse(null);
+    }
+
+    public Order updateOrderStatus(String id, String status) {
+        Order order = orderRepository.findById(id).orElse(null);
+        if (order != null) {
+            order.setStatus(status);
+            return orderRepository.save(order);
+        }
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package edu.cit.policios.campusbites.entity;
+package edu.cit.policios.campusbites.features.auth;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

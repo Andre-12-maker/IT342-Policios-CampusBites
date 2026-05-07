@@ -1,7 +1,5 @@
-package edu.cit.policios.campusbites.service;
+package edu.cit.policios.campusbites.features.food;
 
-import edu.cit.policios.campusbites.entity.Food;
-import edu.cit.policios.campusbites.repository.FoodRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

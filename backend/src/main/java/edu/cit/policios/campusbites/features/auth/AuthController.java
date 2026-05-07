@@ -1,13 +1,11 @@
-package edu.cit.policios.campusbites.controller;
-
-import edu.cit.policios.campusbites.entity.User;
-import edu.cit.policios.campusbites.service.AuthService;
+package edu.cit.policios.campusbites.features.auth;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth") // Matches SDD: /auth/register and /auth/login
+@CrossOrigin(origins = "*")
 public class AuthController {
     private final AuthService authService;
 
