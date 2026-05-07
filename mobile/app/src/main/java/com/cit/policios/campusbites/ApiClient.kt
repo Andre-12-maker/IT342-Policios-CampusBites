@@ -48,4 +48,31 @@ object ApiClient {
             Result.failure(ex)
         }
     }
+
+    fun getFoods(): Result<List<Food>> {
+        return try {
+            val request = Request.Builder()
+                .url(BASE_URL + "/api/food")
+                .get()
+                .build()
+            client.newCall(request).execute().use { response ->
+                if (!response.isSuccessful) throw Exception("HTTP ${response.code}")
+                val body = response.body?.string() ?: throw Exception("Empty body")
+                val type = object : com.google.gson.reflect.TypeToken<List<Food>>() {}.type
+                Result.success(gson.fromJson(body, type))
+            }
+        } catch (ex: Exception) {
+            Result.failure(ex)
+        }
+    }
+
+    fun placeOrder(order: OrderRequest): Result<String> {
+        return try {
+            val json = gson.toJson(order)
+            val body = post("/api/orders", json)
+            Result.success(body)
+        } catch (ex: Exception) {
+            Result.failure(ex)
+        }
+    }
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './shared/components/Navbar'
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Cart from './pages/Cart/Cart'
-import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
-import StoreContextProvider from './context/StoreContext'
+import Home from './features/home/Home'
+import Cart from './features/order/Cart'
+import PlaceOrder from './features/order/PlaceOrder'
+import StoreContextProvider from './shared/context/StoreContext'
 
 const App = () => {
   return (

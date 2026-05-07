@@ -50,6 +50,8 @@ class LoginActivity : AppCompatActivity() {
                         val user = result.getOrNull()
                         showToast("Login successful")
                         val intent = Intent(this, HomeActivity::class.java)
+                        // In the login success block, add:
+                        intent.putExtra("user_id", user?.id)
                         intent.putExtra("user_name", "${user?.firstName ?: "User"} ${user?.lastName ?: ""}".trim())
                         intent.putExtra("user_email", user?.email)
                         startActivity(intent)

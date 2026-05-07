@@ -24,8 +24,10 @@ class HomeActivity : AppCompatActivity() {
         val viewMenuButton = findViewById<Button>(R.id.viewMenuButton)
         val exploreSection = findViewById<LinearLayout>(R.id.exploreSection)
 
+        val userId = intent.getStringExtra("user_id") ?: ""
         val name = intent.getStringExtra("user_name") ?: "CampusBites User"
         val email = intent.getStringExtra("user_email") ?: ""
+
 
         welcomeText.text = "Welcome, $name!"
         userInfoText.text = email
@@ -47,6 +49,20 @@ class HomeActivity : AppCompatActivity() {
             R.id.catNoodles to "Noodles"
         )
 
+        Thread {
+            val result = ApiClient.getFoods()
+            runOnUiThread {
+                if (result.isSuccess) {
+                    val foods = result.getOrNull() ?: emptyList()
+                    // TODO: pass foods to a RecyclerView adapter
+                    // For now, log count:
+                    android.util.Log.d("CampusBites", "Loaded ${foods.size} food items")
+                } else {
+                    android.util.Log.e("CampusBites", "Food load failed: ${result.exceptionOrNull()?.message}")
+                }
+            }
+        }.start()
+
         categories.forEach { (viewId, categoryName) ->
             findViewById<LinearLayout>(viewId).setOnClickListener {
                 selectedCategory = if (selectedCategory == categoryName) "All" else categoryName
@@ -61,6 +77,8 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
     }
+
+
 
     private fun updateCategorySelection(categories: Map<Int, String>) {
         categories.forEach { (viewId, categoryName) ->

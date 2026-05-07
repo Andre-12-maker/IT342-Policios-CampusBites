@@ -1,10 +1,21 @@
 import React, { useContext, useState } from 'react'
 import './PlaceOrder.css'
-import { StoreContext } from '../../context/StoreContext'
+import { StoreContext } from '../../shared/context/StoreContext'
 
 const PlaceOrder = () => {
 
-  const { getTotalCartAmount, cartItems, food_list } = useContext(StoreContext)
+  
+  // Add user to the destructured context values:
+  const { getTotalCartAmount, cartItems, food_list, user } = useContext(StoreContext)
+
+  // In placeOrder(), replace the hardcoded userId:
+  const orderData = {
+      userId: user?.id ?? 'guest',   // ← use real user ID
+      items: orderItems,
+      totalAmount: getTotalCartAmount() + 2,
+      deliveryAddress: `${formData.street}, ${formData.city}, ${formData.state} ${formData.zipcode}, ${formData.country}`
+  };
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -39,14 +50,7 @@ const PlaceOrder = () => {
       }
     })
 
-    const orderData = {
-      userId: 'user123', // In real app, get from auth context
-      items: orderItems,
-      totalAmount: getTotalCartAmount() + 2,
-      deliveryAddress: `${formData.street}, ${formData.city}, ${formData.state} ${formData.zipcode}, ${formData.country}`
-    }
-
-    try {
+       try {
       const response = await fetch('http://localhost:8080/api/orders', {
         method: 'POST',
         headers: {
