@@ -1,4 +1,4 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.features.home
 
 // Food.kt
 data class Food(

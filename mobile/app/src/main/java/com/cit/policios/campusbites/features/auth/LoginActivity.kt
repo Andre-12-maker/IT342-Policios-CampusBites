@@ -1,7 +1,6 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.features.auth
 
 import android.content.Intent
-import android.graphics.Typeface
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -9,7 +8,9 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
+import com.cit.policios.campusbites.shared.network.ApiClient
+import com.cit.policios.campusbites.features.home.HomeActivity
+import com.cit.policios.campusbites.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

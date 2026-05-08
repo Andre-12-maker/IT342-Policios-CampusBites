@@ -1,4 +1,4 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.features.auth
 
 data class User(
     var id: String? = null,

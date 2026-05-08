@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cit.policios.campusbites">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:label="CampusBites Mobile"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:roundIcon="@android:drawable/ic_dialog_info"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:theme="@style/Theme.Campusbites">
 
-        <activity android:name="com.cit.policios.campusbites.HomeActivity" />
-        <activity android:name="com.cit.policios.campusbites.RegisterActivity" />
         <activity
-            android:name="com.cit.policios.campusbites.LoginActivity"
+            android:name=".features.auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".features.auth.RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".features.home.HomeActivity"
+            android:exported="false" />
+
     </application>
+
 </manifest>

@@ -1,4 +1,4 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.shared.network
 
 
 // OrderRequest.kt

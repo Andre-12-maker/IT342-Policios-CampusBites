@@ -1,5 +1,7 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.shared.network
 
+import com.cit.policios.campusbites.features.auth.User
+import com.cit.policios.campusbites.features.home.Food
 import com.google.gson.Gson
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient

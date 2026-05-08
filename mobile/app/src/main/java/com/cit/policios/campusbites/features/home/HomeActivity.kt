@@ -1,13 +1,15 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.features.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.cit.policios.campusbites.shared.network.ApiClient
+import com.cit.policios.campusbites.R
+import com.cit.policios.campusbites.features.auth.LoginActivity
 
 class HomeActivity : AppCompatActivity() {
 

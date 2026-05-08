@@ -1,4 +1,4 @@
-package com.cit.policios.campusbites
+package com.cit.policios.campusbites.features.auth
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.cit.policios.campusbites.shared.network.ApiClient
+import com.cit.policios.campusbites.R
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
