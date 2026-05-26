@@ -1,35 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './shared/components/Navbar';
+import LoginModal from './features/auth/components/LoginModal';
+import RegisterModal from './features/auth/components/RegisterModal';
+import HomePage from './features/home/pages/HomePage';
+import CartPage from './features/cart/pages/CartPage';
+import PlaceOrderPage from './features/placeorder/pages/PlaceOrderPage';
+import OrdersPage from './features/orders/pages/OrdersPage';
+import AddItemPage from './features/admin/pages/AddItemPage';
+import ListItemsPage from './features/admin/pages/ListItemsPage';
+import AdminOrdersPage from './features/admin/pages/AdminOrdersPage';
+import { CartProvider } from './shared/context/CartContext';
+import { AuthProvider } from './shared/context/AuthContext';
+import './shared/styles/globals.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+function ComingSoon({ name }) {
+  return (
+    <div style={{
+      display:'flex', flexDirection:'column', alignItems:'center',
+      justifyContent:'center', minHeight:'60vh', gap:'12px',
+      color:'#888', fontFamily:'Outfit, sans-serif'
+    }}>
+      <p style={{ fontSize:'18px', fontWeight:600, color:'#1a1a1a' }}>{name}</p>
+      <p style={{ fontSize:'14px' }}>Coming soon.</p>
+    </div>
+  );
+}
+
+function AppContent() {
+  const [modal, setModal] = useState(null);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar onLoginClick={() => setModal('login')} />
+      <Routes>
+        {/* Customer */}
+        <Route path="/"            element={<HomePage />} />
+        <Route path="/menu"        element={<HomePage />} />
+        <Route path="/cart"        element={<CartPage />} />
+        <Route path="/place-order" element={<PlaceOrderPage />} />
+        <Route path="/orders"      element={<OrdersPage />} />
+        <Route path="/mobile-app"  element={<ComingSoon name="Mobile App" />} />
+        <Route path="/contact"     element={<ComingSoon name="Contact Us" />} />
+
+        {/* Admin */}
+        <Route path="/admin"        element={<Navigate to="/admin/add" replace />} />
+        <Route path="/admin/add"    element={<AddItemPage />} />
+        <Route path="/admin/list"   element={<ListItemsPage />} />
+        <Route path="/admin/orders" element={<AdminOrdersPage />} />
+
+        <Route path="*" element={<ComingSoon name="Page Not Found" />} />
+      </Routes>
+
+      <LoginModal
+        isOpen={modal === 'login'}
+        onClose={() => setModal(null)}
+        onSwitchToRegister={() => setModal('register')}
+      />
+      <RegisterModal
+        isOpen={modal === 'register'}
+        onClose={() => setModal(null)}
+        onSwitchToLogin={() => setModal('login')}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <CartProvider>
+          <AppContent />
+        </CartProvider>
+      </AuthProvider>
+    </BrowserRouter>
+  );
+}
