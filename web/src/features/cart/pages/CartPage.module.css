@@ -1,0 +1,100 @@
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+
+.main { flex: 1; padding-top: 48px; padding-bottom: 64px; }
+
+/* Empty */
+.empty {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 12px; min-height: 50vh; text-align: center;
+}
+.emptyTitle { font-size: 20px; font-weight: 700; color: var(--text-heading); }
+.emptySub   { font-size: 14px; color: var(--text-muted); }
+.browseBtn {
+  margin-top: 8px; background: var(--brand-primary); color: #fff;
+  padding: 12px 28px; border-radius: var(--radius-btn);
+  font-size: 14px; font-weight: 600; transition: background var(--transition);
+}
+.browseBtn:hover { background: var(--brand-primary-dark); }
+
+/* Table */
+.tableWrap { overflow-x: auto; margin-bottom: 40px; }
+.table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table thead tr { border-bottom: 2px solid var(--border); }
+.table th {
+  text-align: left; padding: 14px 12px; font-weight: 600;
+  color: var(--text-body); font-size: 13px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+.row { border-bottom: 1px solid var(--border); transition: background var(--transition); }
+.row:hover { background: #fafafa; }
+.table td { padding: 16px 12px; vertical-align: middle; }
+.itemImg { width: 60px; height: 60px; object-fit: cover; border-radius: 10px; }
+.itemName  { font-weight: 500; color: var(--text-heading); }
+.itemPrice { color: var(--text-muted); }
+.itemTotal { font-weight: 600; color: var(--text-heading); }
+
+.qtyWrap {
+  display: flex; align-items: center; gap: 8px;
+  border: 1px solid var(--border); border-radius: 8px;
+  width: fit-content; padding: 4px 8px;
+}
+.qtyBtn {
+  background: none; border: none; color: var(--text-body);
+  font-size: 16px; padding: 0 2px; transition: color var(--transition);
+}
+.qtyBtn:hover { color: var(--brand-primary); }
+.qtyNum { font-size: 14px; font-weight: 600; min-width: 20px; text-align: center; }
+.removeBtn {
+  background: none; border: none; color: #bbb;
+  font-size: 16px; transition: color var(--transition); padding: 4px;
+}
+.removeBtn:hover { color: #e53e3e; }
+
+/* Bottom */
+.bottom { display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start; }
+
+.totals { min-width: 260px; flex: 0 0 300px; }
+.totalsTitle { font-size: 18px; font-weight: 700; color: var(--text-heading); margin-bottom: 20px; }
+.totalsRow {
+  display: flex; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+  font-size: 14px; color: var(--text-body);
+}
+.discount { color: #2e7d32; }
+.totalRow {
+  border-bottom: none; font-weight: 600; font-size: 15px;
+  color: var(--text-heading); padding-top: 14px;
+}
+.checkoutBtn {
+  margin-top: 20px; width: 100%; background: var(--brand-primary);
+  color: #fff; padding: 14px; border-radius: var(--radius-btn);
+  font-size: 13px; font-weight: 700; letter-spacing: 0.6px;
+  text-transform: uppercase; transition: background var(--transition), transform var(--transition);
+}
+.checkoutBtn:hover { background: var(--brand-primary-dark); transform: translateY(-1px); }
+
+.promo { flex: 1; min-width: 260px; padding-top: 8px; }
+.promoLabel { font-size: 14px; color: var(--text-body); margin-bottom: 12px; }
+.promoRow { display: flex; gap: 10px; }
+.promoInput {
+  flex: 1; padding: 11px 14px; border: 1px solid var(--border);
+  border-radius: var(--radius-input); font-size: 14px; outline: none;
+  transition: border-color var(--transition);
+}
+.promoInput:focus { border-color: var(--brand-primary); }
+.promoBtn {
+  background: var(--brand-primary); color: #fff; padding: 11px 20px;
+  border-radius: var(--radius-input); font-size: 14px; font-weight: 600;
+  transition: background var(--transition); white-space: nowrap;
+}
+.promoBtn:hover { background: var(--brand-primary-dark); }
+.promoMsg  { margin-top: 8px; font-size: 13px; font-weight: 500; }
+.promoOk  { color: #2e7d32; }
+.promoErr { color: #c62828; }
+.promoHint { margin-top: 6px; font-size: 12px; color: var(--text-muted); }
+
+@media (max-width: 640px) {
+  .bottom { flex-direction: column; }
+  .totals { flex: unset; width: 100%; }
+  .table th:nth-child(1), .table td:nth-child(1) { display: none; }
+}
