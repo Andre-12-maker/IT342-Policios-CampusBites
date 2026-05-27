@@ -13,10 +13,19 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * Seeds default admin account and sample products on first startup.
+ * Skips silently if data already exists — safe to run on every boot.
+ *
+ * SECURITY: Admin credentials come from constants here for dev convenience.
+ * In production, override ADMIN_PASSWORD via an environment variable or
+ * change it immediately after first login via the admin panel.
+ */
 @Component
 public class DataSeeder implements CommandLineRunner {
 
     private static final Logger log = LoggerFactory.getLogger(DataSeeder.class);
+
     private static final String ADMIN_EMAIL    = "admin@campusbites.com";
     private static final String ADMIN_PASSWORD = "Admin@123456";
 
@@ -24,7 +33,9 @@ public class DataSeeder implements CommandLineRunner {
     private final ProductRepository productRepository;
     private final PasswordEncoder   passwordEncoder;
 
-    public DataSeeder(UserRepository userRepository, ProductRepository productRepository, PasswordEncoder passwordEncoder) {
+    public DataSeeder(UserRepository userRepository,
+                      ProductRepository productRepository,
+                      PasswordEncoder passwordEncoder) {
         this.userRepository    = userRepository;
         this.productRepository = productRepository;
         this.passwordEncoder   = passwordEncoder;
@@ -36,20 +47,31 @@ public class DataSeeder implements CommandLineRunner {
         seedProducts();
     }
 
+    // ── Admin ─────────────────────────────────────────────────────────────────
+
     private void seedAdmin() {
-        if (userRepository.existsByEmail(ADMIN_EMAIL)) { log.info("Admin exists, skipping."); return; }
+        if (userRepository.existsByEmail(ADMIN_EMAIL)) {
+            log.info("Admin already exists — skipping seed.");
+            return;
+        }
         User admin = new User();
         admin.setEmail(ADMIN_EMAIL);
         admin.setPassword(passwordEncoder.encode(ADMIN_PASSWORD));
         admin.setFirstname("Campus");
         admin.setLastname("Admin");
         admin.setRole(User.Role.ADMIN);
+        admin.setEnabled(true);
         userRepository.save(admin);
         log.info("Admin seeded: {}", ADMIN_EMAIL);
     }
 
+    // ── Products ──────────────────────────────────────────────────────────────
+
     private void seedProducts() {
-        if (productRepository.count() > 0) { log.info("Products exist, skipping."); return; }
+        if (productRepository.count() > 0) {
+            log.info("Products already exist — skipping seed.");
+            return;
+        }
         List<Product> products = List.of(
                 p("Greek Salad",       "Salad",    12, 4.5, "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop"),
                 p("Veg Salad",         "Salad",    10, 4.5, "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop"),
@@ -84,7 +106,8 @@ public class DataSeeder implements CommandLineRunner {
         log.info("Seeded {} products.", products.size());
     }
 
-    private Product p(String name, String category, int price, double rating, String imageUrl) {
+    private Product p(String name, String category, int price,
+                      double rating, String imageUrl) {
         Product p = new Product();
         p.setName(name);
         p.setDescription("Fresh and delicious " + name.toLowerCase() + " prepared daily at Campus Bites.");
@@ -94,7 +117,7 @@ public class DataSeeder implements CommandLineRunner {
         p.setRatingCount(100);
         p.setImageUrl(imageUrl);
         p.setAvailable(true);
-        p.setStock(50);
+        p.setStock(50);   // stock tracked — decrements on order, restores on cancel
         return p;
     }
 }

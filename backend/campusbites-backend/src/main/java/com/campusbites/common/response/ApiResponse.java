@@ -2,6 +2,14 @@ package com.campusbites.common.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * Uniform API response envelope used by every controller.
+ *
+ * Success:  { "success": true,  "data": { ... } }
+ * Failure:  { "success": false, "error": { "code": "NOT_FOUND", "message": "..." } }
+ *
+ * NON_NULL suppresses "data": null on errors and "error": null on successes.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record ApiResponse<T>(boolean success, T data, ErrorPayload error) {
 

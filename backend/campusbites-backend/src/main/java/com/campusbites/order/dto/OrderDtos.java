@@ -2,7 +2,9 @@ package com.campusbites.order.dto;
 
 import com.campusbites.order.model.Order;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -11,9 +13,7 @@ import java.util.List;
 public class OrderDtos {
 
     public record CheckoutRequest(
-            @NotNull @Valid DeliveryInfoRequest deliveryInfo,
-            @NotBlank String successUrl,
-            @NotBlank String cancelUrl
+            @NotNull @Valid DeliveryInfoRequest deliveryInfo
     ) {}
 
     public record DeliveryInfoRequest(
@@ -24,8 +24,6 @@ public class OrderDtos {
     ) {}
 
     public record UpdateStatusRequest(@NotNull Order.Status status) {}
-
-    public record CheckoutResponse(String url) {}
 
     public record OrderItemResponse(String productId, String name, BigDecimal price, int qty, BigDecimal subtotal) {}
 
