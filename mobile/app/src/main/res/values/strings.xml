@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CampusBites Mobile</string>
-    <string name="login_title">Login</string>
-    <string name="register_title">Register</string>
-    <string name="home_title">Welcome</string>
-    <string name="email_hint">Email</string>
-    <string name="password_hint">Password</string>
-    <string name="first_name_hint">First Name</string>
-    <string name="last_name_hint">Last Name</string>
-    <string name="login_button">Login</string>
-    <string name="register_button">Register</string>
-    <string name="logout_button">Logout</string>
-    <string name="register_link">Create account</string>
-    <string name="login_link">Already have an account? Log in</string>
-    <string name="login_success">Login successful</string>
-    <string name="register_success">Registration completed. Please sign in.</string>
+    <string name="app_name">CampusBites</string>
 </resources>
