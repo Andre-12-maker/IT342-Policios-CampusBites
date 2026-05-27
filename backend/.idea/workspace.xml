@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98736995-1aa6-4dd1-9cea-5bb22571dc37" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Andre-12-maker&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Andre-12-maker/IT342-Policios-CampusBites.git&quot;,
+    &quot;accountId&quot;: &quot;39b5a7f0-5933-4ce1-8fbb-46e8c38fb5ce&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3D76u3A1bT2CUWjHIBTI2tUSetO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CampusbitesApplication.executor": "Run",
+    "JUnit.AuthServiceTest.executor": "Run",
+    "JUnit.FoodServiceTest.executor": "Run",
+    "JUnit.OrderServiceTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/vertical-slice-refactor",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Series/Desktop/IT342-Policios-CampusBites/backend",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.cit.policios.campusbites.features.order" />
+      <recent name="edu.cit.policios.campusbites.features.food" />
+      <recent name="edu.cit.policios.campusbites.features.auth" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CampusbitesApplication">
+    <configuration name="CampusbitesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.cit.policios.campusbites.CampusbitesApplication" />
+      <module name="campusbites" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.cit.policios.campusbites.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campusbites" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.cit.policios.campusbites.features.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.cit.policios.campusbites.features.auth" />
+      <option name="MAIN_CLASS_NAME" value="edu.cit.policios.campusbites.features.auth.AuthServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FoodServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campusbites" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.cit.policios.campusbites.features.food.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.cit.policios.campusbites.features.food" />
+      <option name="MAIN_CLASS_NAME" value="edu.cit.policios.campusbites.features.food.FoodServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campusbites" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.cit.policios.campusbites.features.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.cit.policios.campusbites.features.order" />
+      <option name="MAIN_CLASS_NAME" value="edu.cit.policios.campusbites.features.order.OrderServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CampusbitesApplication" />
+        <item itemvalue="JUnit.OrderServiceTest" />
+        <item itemvalue="JUnit.FoodServiceTest" />
+        <item itemvalue="JUnit.AuthServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98736995-1aa6-4dd1-9cea-5bb22571dc37" name="Changes" comment="" />
+      <created>1777620982182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777620982182</updated>
+    </task>
+    <servers />
+  </component>
+</project>
