@@ -1,30 +1,30 @@
-# 🍽️ CampusBites — Campus Food Ordering System
+﻿# ðŸ½ï¸ CampusBites â€” Campus Food Ordering System
 
 A campus food ordering system built with Spring Boot, React, and Android (Kotlin).
 
 ---
 
-## 📌 Project Info
+## ðŸ“Œ Project Info
 
 | Detail | Info |
 |---|---|
-| Course | IT342 — Software Engineering |
+| Course | IT342 â€” Software Engineering |
 | Project | CampusBites |
 | Repository | `backend/`, `web/`, `mobile/` |
 
 ---
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 | Platform | Technology |
 |---|---|
-| Backend | Java 17 · Spring Boot 3.5.11 · Spring Data MongoDB · Spring Security |
-| Web Frontend | React 19.2.0 · Vite 7.3.1 · React Router DOM 7.15.1 |
-| Mobile | Android · Kotlin · OkHttp 4.11.0 · Gson 2.10.1 |
+| Backend | Java 17 Â· Spring Boot 3.5.11 Â· Spring Data MongoDB Â· Spring Security |
+| Web Frontend | React 19.2.0 Â· Vite 7.3.1 Â· React Router DOM 7.15.1 |
+| Mobile | Android Â· Kotlin Â· OkHttp 4.11.0 Â· Gson 2.10.1 |
 
 ---
 
-## 🚀 Getting Started
+## ðŸš€ Getting Started
 
 ### Prerequisites
 
@@ -62,7 +62,7 @@ Open the `mobile/` folder in Android Studio and run the app on an emulator or de
 
 ---
 
-## 🧪 Running Tests
+## ðŸ§ª Running Tests
 
 ```bash
 cd backend
@@ -71,12 +71,13 @@ cd backend
 
 ---
 
-## 👥 Contributors
+## ðŸ‘¥ Contributors
 
-- **Andre-12-maker** — Full Stack Developer
+- **Andre-12-maker** â€” Full Stack Developer
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
-This project is for educational purposes — IT342 System Integration and Architecture.
+This project is for educational purposes â€” IT342 System Integration and Architecture.
+
