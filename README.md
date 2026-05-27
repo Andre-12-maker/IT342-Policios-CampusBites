@@ -1,6 +1,6 @@
 # 🍽️ CampusBites — Campus Food Ordering System
 
-A multi-platform food ordering system for campus environments, built with Spring Boot, React, and Android (Kotlin).
+A campus food ordering system built with Spring Boot, React, and Android (Kotlin).
 
 ---
 
@@ -10,8 +10,7 @@ A multi-platform food ordering system for campus environments, built with Spring
 |---|---|
 | Course | IT342 — Software Engineering |
 | Project | CampusBites |
-| Branch | `feature/vertical-slice-refactor` |
-| Architecture | Vertical Slice Architecture |
+| Repository | `backend/`, `web/`, `mobile/` |
 
 ---
 
@@ -19,67 +18,28 @@ A multi-platform food ordering system for campus environments, built with Spring
 
 | Platform | Technology |
 |---|---|
-| Backend | Java 17 · Spring Boot 3.5 · MongoDB Atlas |
-| Web Frontend | React 18 · Vite · React Router |
-| Mobile | Android · Kotlin · OkHttp · Gson |
-
----
-
-## 🏗️ Project Structure (Vertical Slice Architecture)
-
-### Backend
-
-backend/src/main/java/edu/cit/policios/campusbites/
-├── features/
-│   ├── auth/          # User registration & login
-│   ├── food/          # Food menu & categories
-│   └── order/         # Order placement & history
-├── shared/
-│   └── security/      # Spring Security config
-└── CampusbitesApplication.java
-
-### Web Frontend
-
-web/src/
-├── features/
-│   ├── auth/          # Login & Register pages
-│   ├── food/          # Food display & filtering
-│   ├── home/          # Home page, header, menu
-│   └── order/         # Cart & Place Order pages
-└── shared/
-├── assets/        # Images & static data
-├── components/    # Navbar (shared)
-└── context/       # Global cart state
-
-### Mobile (Android)
-
-mobile/app/src/main/java/com/cit/policios/campusbites/
-├── features/
-│   ├── auth/          # Login & Register activities
-│   └── home/          # Home & category browsing
-└── shared/
-└── network/       # API client
-
----
-
-## ✅ Features
-
-- 👤 User Registration & Login (BCrypt password hashing)
-- 🍕 Browse Food Menu by Category
-- 🛒 Add/Remove Items from Cart
-- 📦 Place Orders with Delivery Address
-- 📋 View Order History
-- 📱 Mobile Login & Registration (Android)
-- 🔐 Spring Security authentication
+| Backend | Java 17 · Spring Boot 3.5.11 · Spring Data MongoDB · Spring Security |
+| Web Frontend | React 19.2.0 · Vite 7.3.1 · React Router DOM 7.15.1 |
+| Mobile | Android · Kotlin · OkHttp 4.11.0 · Gson 2.10.1 |
 
 ---
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+- Java 17
+- Node.js 20+ and npm
+- Android Studio for the mobile app
+- A working internet connection for MongoDB Atlas and npm packages
+
 ### Backend
 ```bash
 cd backend
+# macOS / Linux
 ./mvnw spring-boot:run
+# Windows
+./mvnw.cmd spring-boot:run
 ```
 Runs on `http://localhost:8080`
 
@@ -92,7 +52,13 @@ npm run dev
 Runs on `http://localhost:5173`
 
 ### Mobile
-Open `mobile/` folder in Android Studio and run on emulator or device.
+Open the `mobile/` folder in Android Studio and run the app on an emulator or device.
+
+### Notes
+
+- The backend connects to MongoDB Atlas via `backend/src/main/resources/application.properties`.
+- If you want to use a different MongoDB instance, update the `spring.data.mongodb.uri` value.
+- On Windows, use `./mvnw.cmd` for Maven wrapper commands.
 
 ---
 
@@ -102,48 +68,6 @@ Open `mobile/` folder in Android Studio and run on emulator or device.
 cd backend
 ./mvnw clean test
 ```
-
-Expected output:
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
-BUILD SUCCESS
-
-### Test Coverage
-
-| Test Class | Tests | Status |
-|---|---|---|
-| AuthServiceTest | 5 | ✅ PASS |
-| FoodServiceTest | 6 | ✅ PASS |
-| OrderServiceTest | 6 | ✅ PASS |
-| **Total** | **17** | ✅ **ALL PASS** |
-
----
-
-## 🔀 Git Branches
-
-| Branch | Purpose |
-|---|---|
-| `main` | Stable production code |
-| `feature/vertical-slice-refactor` | Vertical slice refactoring + tests |
-| `backend` | Backend development |
-| `web` | Web frontend development |
-| `mobile` | Mobile development |
-
----
-
-## 📡 API Endpoints
-
-| Method | Endpoint | Description |
-|---|---|---|
-| POST | `/auth/register` | Register new user |
-| POST | `/auth/login` | Login user |
-| GET | `/api/food` | Get all food items |
-| GET | `/api/food/category/{category}` | Get food by category |
-| GET | `/api/food/{id}` | Get food by ID |
-| POST | `/api/food` | Create food item |
-| POST | `/api/orders` | Place new order |
-| GET | `/api/orders/user/{userId}` | Get orders by user |
-| GET | `/api/orders/{id}` | Get order by ID |
-| PATCH | `/api/orders/{id}/status` | Update order status |
 
 ---
 
@@ -155,4 +79,4 @@ BUILD SUCCESS
 
 ## 📄 License
 
-This project is for educational purposes — IT342 Software Engineering.
+This project is for educational purposes — IT342 System Integration and Architecture.
