@@ -1,0 +1,4 @@
+com.cit.policios.campusbites.test.app-androidTest-0 C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\build\generated\res\resValues\androidTest\debug
+com.cit.policios.campusbites.test.app-mergeDebugAndroidTestResources-1 C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.cit.policios.campusbites.test.app-mergeDebugAndroidTestResources-2 C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.cit.policios.campusbites.test.app-merged_res-3 C:\Users\L13Y09W11\Desktop\IT342-Policios-CampusBites\mobile\app\build\intermediates\merged_res\debugAndroidTest
